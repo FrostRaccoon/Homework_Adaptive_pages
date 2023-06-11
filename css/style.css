@@ -336,10 +336,6 @@ body {
 }
 
 /* ==================== header END ==================== */
-.content {
-    padding: 0 auto 60px auto;
-}
-
 .banner {
     width: 100%;
     min-height: 764px;
@@ -480,6 +476,10 @@ body {
 }
 
 /* ========== products ========== */
+.products {
+    margin: 96px auto;
+}
+
 .products-title {
     font-weight: 400;
     font-size: 30px;
@@ -647,7 +647,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19, 2px;
+    line-height: 19px;
     text-align: center;
     word-break: break-all;
 }
