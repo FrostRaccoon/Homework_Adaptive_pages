@@ -10,7 +10,7 @@ input:focus:not(:focus-visible) {
 
 *:focus-visible,
 input:focus-visible {
-    outline: 3px solid blue;
+    outline: 1px solid rgb(255, 255, 255);
 }
 
 a {
@@ -146,11 +146,11 @@ body {
 }
 
 .header-search-btn:focus~label>svg {
-    fill: green;
+    fill: rgb(4, 253, 4);
 }
 
 .header-search-btn:active~label>svg {
-    fill: red;
+    fill: rgb(52, 233, 224);
 }
 
 .menu-btn {
