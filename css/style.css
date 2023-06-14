@@ -1083,7 +1083,7 @@ body {
     }
 
     .banner {
-        max-height: 363px;
+        min-height: 363px;
     }
 
     .banner-wrp {
