@@ -6,7 +6,7 @@ const products = getProductsObject();
 
 const basketEl = document.querySelector(`.basket`);
 const basketListEl = document.querySelector(`.basketList`);
-const basketCounter = document.querySelector(`.cart-btn-link span`);
+const basketCounterEl = document.querySelector(`.cart-btn-link span`);
 const basketTotalValueEl = document.querySelector(`.basketTotalValue`);
 
 document.querySelector(`.cart-btn-link`).addEventListener(`click`, () => {
@@ -55,6 +55,7 @@ function renderBasketContent() {
     (acc, product) => acc + getBasketProductMarkup(product),
     ``
   );
+  basketCounterEl.textContent = getTotalBasketCount().toString();
   basketTotalValueEl.textContent = getTotalBasketPrice().toFixed(2);
 }
 
