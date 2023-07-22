@@ -335,6 +335,40 @@ body {
     fill: red;
 }
 
+.basket {
+    position: absolute;
+    z-index: 3;
+    right: 232px;
+    top: 75px;
+    background: white;
+    padding: 6px 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 1px;
+    font-size: 14px;
+}
+  
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+  
+.basketHeader {
+    font-weight: bold;
+}
+  
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
 /* ==================== header END ==================== */
 .banner {
     width: 100%;
@@ -962,6 +996,10 @@ body {
 /* ======= end copyright ======= */
 
 @media (max-width: 1024px) {
+    .basket {
+        width: 600px;
+    }
+    
     .center {
         max-width: 736px;
     }
